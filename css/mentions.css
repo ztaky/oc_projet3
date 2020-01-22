@@ -72,36 +72,39 @@ h2
 
 footer
 {
-	display: flex;
-	flex-direction: row;
-	background: #589C87;
-	padding-bottom: 15px;
-	padding-top: 15px;
-  	position: fixed;
-  	bottom: 0;
-  	top: 97%;
-  	width: 100%;
-  	margin-top: -2.5em;
+  display: flex;
+  flex-direction: row;
+  background: #589C87;
+  padding-bottom: 15px;
+  padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    top: 97%;
+    width: 100%;
+    margin-top: -2.5em;
+    justify-content: space-around;
 }
 
-.ml
-{
-font-family: 'sinkin_sans400_regular';
-padding-left: 30px;
-padding-right:77%;
-font-size: 1.2em;
-color: #ffd119;
-text-align: left;
-}
-
-
-.cn
+.ml, .ml1
 {
 font-family: 'sinkin_sans400_regular';
 padding-left: 20px;
-font-size: 1.2em;
+padding-right:50%;
+font-size: 1em;
 color: #ffd119;
 text-align: left;
+text-decoration: none;
+}
+
+
+.cn, .cn1
+{
+font-family: 'sinkin_sans400_regular';
+padding-right: 20px;
+font-size: 1em;
+color: #ffd119;
+text-align: right;
+text-decoration: none;
 }
 
 
