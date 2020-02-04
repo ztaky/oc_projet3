@@ -80,6 +80,23 @@ text-align: left;
 text-decoration: none;
 }
 
+.ml:hover
+{
+  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+
+@keyframes wiggle {
+  10%, 90% {transform: translate3d(-1px, 0, 0);}
+  20%, 80% {transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
+  40%, 60% {transform: translate3d(4px, 0, 0);}
+  
+}
+
 .cn, .cn1
 {
 font-family: 'sinkin_sans400_regular';
@@ -88,6 +105,14 @@ font-size: 1em;
 color: #ffd119;
 text-align: right;
 text-decoration: none;
+}
+
+.cn:hover
+{
+  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 /*Spécifique Chic à la française*/
@@ -149,7 +174,7 @@ h4:before, h4:after
   background: linear-gradient(to right, #4B9436 0%, #8BCD68 50%, #C7F78F 100%);
   }
 
-  h4:after
+  /*h4:after
 {
   content: "";
   flex: 1 1;
@@ -159,22 +184,13 @@ h4:before, h4:after
   margin-bottom: 2%;
   margin-top: 2%;
   background: linear-gradient(to left, #4B9436 0%, #8BCD68 50%, #C7F78F 100%);
-  }
+  }*/
 
   h4 span
   {
   	color: #000000;
   }
 
-  h4:hover {
-  background:
-     linear-gradient(
-       to right,
-       var(--mainColor) 0%,
-       var(--mainColor) 5px,
-       transparent
-     );
-}
 
   article
 {
@@ -201,4 +217,25 @@ h4:before, h4:after
 	color: #000000;
 }
 
+.underline
+{
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.underline::after
+{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #4B9436;
+  transition: width .3s;
+}
+
+.underline:hover::after
+{
+  width: 100%;
+}
 
