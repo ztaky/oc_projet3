@@ -70,8 +70,8 @@ padding: 0px;
 	height: 15%;
 	align-content: center;
 	background: #589C87;
-	padding-right: 43%;
-	padding-left: 42%;
+	padding-right: 42.5%;
+	padding-left: 42.5%;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-top: -22px;
@@ -90,18 +90,18 @@ padding: 0px;
 	color: #ffd119;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 2%;
+	padding-right: 2%;
 	border-radius: 10px;
-	margin-right: 42%;
-	margin-left: 42%;
+	margin-right: 40%;
+	margin-left: 40%;
 }
 
 
 .prochainement:after
 {
 display: inline-block;
-animation: dotty steps(1,end) 1s infinite;
+animation: dotty steps(1,end) 3s infinite;
 content:'';
 }
 
@@ -177,6 +177,286 @@ text-decoration: none;
   backface-visibility: hidden;
   perspective: 1000px;
 }
+
+/* Ecrans inférieurs à 1200px*/
+
+@media only screen and (max-width: 1200px) 
+
+{
+
+
+.cont
+{
+	width: 300px;
+	height: 423px;
+	border: 2px solid #000000;
+	box-shadow: 1px 1px 10px #a8a4a3;
+	overflow: hidden
+}
+
+
+.menu
+{
+	width: 300px;
+	height: 423px;
+	transition : all 1s;
+	opacity: 1;	
+}
+
+.ml, .ml1
+{
+font-family: 'sinkin_sans400_regular';
+padding-left: 0;
+padding-right:0;
+font-size: 1em;
+color: #ffd119;
+text-align: center;
+text-decoration: none;
+}
+
+
+.cn, .cn1
+{
+font-family: 'sinkin_sans400_regular';
+padding-right: 0;
+font-size: 1em;
+color: #ffd119;
+text-align: center;
+text-decoration: none;
+
+} 
+
+.prochainement
+{
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	font-family: 'sinkin_sans400_regular';
+	background-color: #589C87;
+	font-size: 1.1em;
+	color: #ffd119;
+	padding-left: auto;
+	padding-right: auto;
+	margin-right: 250px;
+	margin-left: 250px;
+	
+	
+}
+
+}
+
+
+
+/* Ecrans inférieurs à 768px*/
+
+@media only screen and (max-width: 768px) 
+
+{
+
+.logo
+{
+	width: 35%;
+	height: 35%;
+	align-content: center;
+	background: #589C87;
+	padding-right: 32.5%;
+	padding-left: 32.5%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: -22px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.cont
+{
+	width: 200px;
+	height: 282px;
+	border: 2px solid #000000;
+	box-shadow: 1px 1px 10px #a8a4a3;
+	overflow: hidden
+}
+
+
+.menu
+{
+	width: 200px;
+	height: 282px;
+	transition : all 1s;
+	opacity: 1;	
+}
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	background: #589C87;
+	padding-bottom: 15px;
+	padding-top: 15px;
+  	position: fixed;
+  	bottom: 0;
+  	top: 97%;
+  	width: 100%;
+  	margin-top: -2.5em;
+  	justify-content: space-around;
+}
+
+.ml, .ml1
+{
+font-family: 'sinkin_sans400_regular';
+padding-left: 0;
+padding-right:0;
+font-size: 1em;
+color: #ffd119;
+text-align: center;
+text-decoration: none;
+}
+
+
+.cn, .cn1
+{
+font-family: 'sinkin_sans400_regular';
+padding-right: 0;
+font-size: 1em;
+color: #ffd119;
+text-align: center;
+text-decoration: none;
+
+}
+
+.prochainement
+{
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	font-family: 'sinkin_sans400_regular';
+	background-color: #589C87;
+	font-size: 1.1em;
+	color: #ffd119;
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-right: 100px;
+	margin-left: 100px;
+	
+	
+}
+
+}
+
+
+
+@media only screen and (max-width: 600px) 
+
+{
+
+.logo
+{
+	width: 50%;
+	height: 50%;
+	align-content: center;
+	background: #589C87;
+	padding-right: 25%;
+	padding-left: 25%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: -22px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.up
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  
+}
+
+.down
+{
+  display: flex;
+  flex-direction: column;     
+  justify-content: space-around;
+  margin-top: 60px;
+  
+}
+
+.cont
+{
+	width: 300px;
+	height: 423px;
+	border: 2px solid #000000;
+	box-shadow: 1px 1px 10px #a8a4a3;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.menu
+{
+	width: 300px;
+	height: 423px;
+
+}
+
+.ml, .ml1
+{
+font-family: 'sinkin_sans400_regular';
+padding-left: 0;
+padding-right:0;
+font-size: 1em;
+color: #ffd119;
+text-align: center;
+text-decoration: none;
+}
+
+
+.cn, .cn1
+{
+font-family: 'sinkin_sans400_regular';
+padding-right: 0;
+font-size: 1em;
+color: #ffd119;
+text-align: center;
+text-decoration: none;
+
+}
+
+.prochainement
+{
+	text-align: center;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	font-family: 'sinkin_sans400_regular';
+	background-color: #589C87;
+	font-size: 1.1em;
+	color: #ffd119;
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-right: 60px;
+	margin-left: 60px;
+	
+	
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
