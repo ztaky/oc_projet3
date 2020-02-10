@@ -305,7 +305,7 @@ article
 
 /* Ecrans inférieurs à 550px*/
 
-@media only screen and (max-width: 550px) 
+@media only screen and (max-width: 400px) 
 
 {
 
@@ -372,7 +372,7 @@ main
 
 /* Ecrans inférieurs à 768px*/
 
-@media only screen and (min-width:550px) and (max-width: 768px) 
+@media only screen and (min-width:401px) and (max-width: 767px) and (orientation: landscape) and (orientation: portrait)
 
 {
 
