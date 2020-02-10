@@ -338,8 +338,8 @@ text-decoration: none;
 main
 {
   width: 97%;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   margin-bottom: 50px
 }
 
@@ -352,6 +352,12 @@ main
 .prix
 {
   font-size: 0.6em;
+}
+
+article 
+{
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 }
@@ -438,6 +444,12 @@ main
 .prix
 {
   font-size: 0.8em;
+}
+
+article
+{
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 }

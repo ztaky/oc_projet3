@@ -203,7 +203,7 @@ h3:before, h3:after{
   margin-top: 2%;
   }
 
-  article
+article
 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,8 +320,8 @@ text-decoration: none;
 main
 {
   width: 97%;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   margin-bottom: 50px
 }
 
@@ -336,6 +336,10 @@ main
   font-size: 0.6em;
 }
 
+article 
+{
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 /* Ecrans superieurs à 551px et inferieurs a 767px*/
@@ -420,6 +424,12 @@ main
 .prix
 {
   font-size: 0.8em;
+}
+
+article 
+{
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 }

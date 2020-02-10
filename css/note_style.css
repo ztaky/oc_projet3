@@ -352,20 +352,26 @@ text-decoration: none;
 main
 {
   width: 97%;
-  margin-right: 0px;
-  margin-left: 0px;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   margin-bottom: 50px
 }
 
 .plats
 {
   letter-spacing: 0px;
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
 .prix
 {
-  font-size: 0.7em;
+  font-size: 0.6em;
+}
+
+article 
+{
+  margin-right: 3%;
+  margin-left: 3%;
 }
 
 }
@@ -456,6 +462,12 @@ main
 {
   letter-spacing: 0px;
   font-size: 0.8em;
+}
+
+article
+{
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 
