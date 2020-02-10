@@ -210,8 +210,8 @@ h3:before,h3:after
   margin-left: 7%;
   margin-bottom: 2%;
   margin-top: 2%;
-  background: -webkit-gradient(linear, left top, right top, from(#4B9436), color-stop(50%, #8BCD68), to(#C7F78F));
-  background: -o-linear-gradient(left, #4B9436 0%, #8BCD68 50%, #C7F78F 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#4B9436), color-stop(50%, #8BCD68), to(#C7F78F));
+  background: -o-linear-gradient(right, #4B9436 0%, #8BCD68 50%, #C7F78F 100%);
   background: linear-gradient(to right, #4B9436 0%, #8BCD68 50%, #C7F78F 100%);
   }
 
@@ -227,7 +227,7 @@ h3:before,h3:after
   margin-top: 2%;
   background: -webkit-gradient(linear, left top, right top, from(#4B9436), color-stop(50%, #8BCD68), to(#C7F78F));
   background: -o-linear-gradient(left, #4B9436 0%, #8BCD68 50%, #C7F78F 100%);
-  background: linear-gradient(to right, #4B9436 0%, #8BCD68 50%, #C7F78F 100%);
+  background: linear-gradient(to left, #4B9436 0%, #8BCD68 50%, #C7F78F 100%);
   }
 
   h3 span

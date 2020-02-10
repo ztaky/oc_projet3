@@ -188,9 +188,9 @@ h3 {
           flex-direction: row;
   font-family: 'lobster_1.3regular';
   font-size: 1.5em;
-  
-
 }
+
+
 h3:before, h3:after{
   content: "";
   -webkit-box-flex: 1;
@@ -252,7 +252,7 @@ article
   text-decoration: none;
 }
 
-.underline::after
+.underline1::after, .underline2::after, .underline3::after
 {
   content: '';
   display: block;
@@ -266,7 +266,7 @@ article
   transition: width .3s;
 }
 
-.underline:hover::after
+.underline1:hover::after, .underline2:hover::after, .underline3:hover::after
 {
   width: 100%;
 }
