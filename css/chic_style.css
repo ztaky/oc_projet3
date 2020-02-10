@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /*fonts*/
 
 @font-face {
@@ -34,30 +36,37 @@ padding: 0px;
 
 .logo
 {
-	width: 15%;
-	height: 15%;
-	align-content: center;
-	background: #589C87;
-	padding-right: 43%;
-	padding-left: 42%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-top: -22px;
+  width: 15%;
+  height: 15%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #589C87;
+  padding-right: 43%;
+  padding-left: 42%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: -22px;
 }
 
 footer
 {
-	display: flex;
-	flex-direction: row;
-	background: #589C87;
-	padding-bottom: 15px;
-	padding-top: 15px;
-  	position: fixed;
-  	bottom: 0;
-  	top: 97%;
-  	width: 100%;
-  	margin-top: -2.5em;
-  	justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #589C87;
+  padding-bottom: 15px;
+  padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    top: 97%;
+    width: 100%;
+    margin-top: -2.5em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .ml, .ml1
@@ -73,18 +82,31 @@ text-decoration: none;
 
 .ml:hover
 {
-  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+          animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+
+@-webkit-keyframes wiggle {
+  10%, 90% {-webkit-transform: translate3d(-1px, 0, 0);transform: translate3d(-1px, 0, 0);}
+  20%, 80% {-webkit-transform: translate3d(2px, 0, 0);transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {-webkit-transform: translate3d(-4px, 0, 0);transform: translate3d(-4px, 0, 0);}
+  40%, 60% {-webkit-transform: translate3d(4px, 0, 0);transform: translate3d(4px, 0, 0);}
+  
 }
 
 
 @keyframes wiggle {
-  10%, 90% {transform: translate3d(-1px, 0, 0);}
-  20%, 80% {transform: translate3d(2px, 0, 0);}
-  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
-  40%, 60% {transform: translate3d(4px, 0, 0);}
+  10%, 90% {-webkit-transform: translate3d(-1px, 0, 0);transform: translate3d(-1px, 0, 0);}
+  20%, 80% {-webkit-transform: translate3d(2px, 0, 0);transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {-webkit-transform: translate3d(-4px, 0, 0);transform: translate3d(-4px, 0, 0);}
+  40%, 60% {-webkit-transform: translate3d(4px, 0, 0);transform: translate3d(4px, 0, 0);}
   
 }
 
@@ -100,10 +122,14 @@ text-decoration: none;
 
 .cn:hover
 {
-  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+          animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 /*Spécifique Chic à la française*/
@@ -120,42 +146,56 @@ font-weight: bold;
 
 main
 {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	background-color: #FFF4FE;
-	padding-bottom: 5%;
-	padding-top: 3%;
-	width: 40%;
-	margin-right: 30%;
-	margin-left: 30%;
-	margin-bottom: 10%;
-	border: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #FFF4FE;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  width: 40%;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 10%;
+  border: 1px solid #000;
 
 }
 
 .nom1
 {
-	font-family: 'redressedregular';
-	font-size: 3em;
-	padding-bottom: 5%;
-	padding-top: 5%;
-	background: linear-gradient(to right, #C07428 0%, #9B6A96 50%, #6950C6 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  font-family: 'redressedregular';
+  font-size: 3em;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  background: -webkit-gradient(linear, left top, right top, from(#C07428), color-stop(50%, #9B6A96), to(#6950C6));
+  background: -o-linear-gradient(left, #C07428 0%, #9B6A96 50%, #6950C6 100%);
+  background: linear-gradient(to right, #C07428 0%, #9B6A96 50%, #6950C6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-h4 {
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-family: 'lobster_1.3regular';
   font-size: 1.5em;
   
 
 }
-h4:before, h4:after{
+h3:before, h3:after{
   content: "";
-  flex: 1 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
   border-bottom: 3.5px solid;
   margin-right: 7%;
   margin-left: 7%;
@@ -165,40 +205,44 @@ h4:before, h4:after{
 
   article
 {
-	display: flex;
-	margin-right: 12%;
-	margin-left: 12%;
-	justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 12%;
+  margin-left: 12%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .plats
 {
-	text-align: left;
-	font-family: 'handleeregular';
-	font-size: 1.2em;
+  text-align: left;
+  font-family: 'handleeregular';
+  font-size: 1.2em;
 }
 
 
 .prix
 {
-	text-align: right;
-	font-family: 'handleeregular';
-	font-size: 1.2em;
+  text-align: right;
+  font-family: 'handleeregular';
+  font-size: 1.2em;
 }
 
 .color1
 {
-	color: #C07428;
+  color: #C07428;
 }
 
 .color2
 {
-	color: #9B6A96;
+  color: #9B6A96;
 }
 
 .color3
 {
-	color: #6950C6;
+  color: #6950C6;
 }
 
 .underline
@@ -214,7 +258,11 @@ h4:before, h4:after{
   display: block;
   width: 0;
   height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#C07428), color-stop(50%, #9B6A96), to(#6950C6));
+  background: -o-linear-gradient(left, #C07428 0%, #9B6A96 50%, #6950C6 100%);
   background: linear-gradient(to right, #C07428 0%, #9B6A96 50%, #6950C6 100%);
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
   transition: width .3s;
 }
 
@@ -223,9 +271,9 @@ h4:before, h4:after{
   width: 100%;
 }
 
-/* Ecrans inférieurs à 600px*/
+/* Ecrans inférieurs à 550px*/
 
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 550px) 
 
 {
 
@@ -233,7 +281,8 @@ h4:before, h4:after{
 {
   width: 50%;
   height: 50%;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background: #589C87;
   padding-right: 25%;
   padding-left: 25%;
@@ -291,7 +340,7 @@ main
 
 /* Ecrans inférieurs à 768px*/
 
-@media only screen and (max-width: 768px) 
+@media only screen and (min-width:550px) and (max-width: 768px) 
 
 {
 
@@ -299,7 +348,8 @@ main
 {
   width: 35%;
   height: 35%;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background: #589C87;
   padding-right: 32.5%;
   padding-left: 32.5%;
@@ -311,12 +361,15 @@ main
 }
 
 
-}
-
 footer
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #589C87;
   padding-bottom: 15px;
   padding-top: 15px;
@@ -325,7 +378,8 @@ footer
     top: 97%;
     width: 100%;
     margin-top: -2.5em;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .ml, .ml1
@@ -362,7 +416,7 @@ main
 
 /* Ecrans inférieurs à 1200px*/
 
-@media only screen and (max-width: 1200px) 
+@media only screen and (min-width: 768px) and (max-width: 1200px) 
 
 {
 
@@ -390,7 +444,12 @@ text-decoration: none;
 } 
 
 
-
+main
+{
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
 
 .prix
 {
@@ -406,13 +465,5 @@ text-decoration: none;
   font-size: 1em;
 }
 }
-
-
-
-
-
-
-
-
 
 

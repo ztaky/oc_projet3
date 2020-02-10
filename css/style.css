@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 @font-face {
     font-family: 'sinkin_sans400_regular';
     src: url('fonts/SinkinSans-400Regular-webfont.eot');
@@ -20,9 +22,15 @@ padding: 0px;
 
 .up
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 60px;
   margin-bottom: 80px;
   margin-right: 10%;
@@ -31,9 +39,15 @@ padding: 0px;
 
 .down
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;     
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;     
+  -ms-flex-pack: distribute;     
+      justify-content: space-around;
   margin-top: 60px;
   margin-right: 10%;
   margin-left: 10%;
@@ -44,7 +58,8 @@ padding: 0px;
 	width: 495px;
 	height: 699px;
 	border: 2px solid #000000;
-	box-shadow: 1px 1px 10px #a8a4a3;
+	-webkit-box-shadow: 1px 1px 10px #a8a4a3;
+	        box-shadow: 1px 1px 10px #a8a4a3;
 	overflow: hidden;
 }
 
@@ -53,6 +68,8 @@ padding: 0px;
 {
 	width: 495px;
 	height: 699px;
+	-webkit-transition : all 1s;
+	-o-transition : all 1s;
 	transition : all 1s;
 	opacity: 1;	
 }
@@ -60,7 +77,9 @@ padding: 0px;
 .cont:hover .menu,
 .cont:focus .menu
 {
-	transform: scale(1.1); 
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1); 
 	opacity: 0.5;
 }
 
@@ -68,7 +87,8 @@ padding: 0px;
 {
 	width: 15%;
 	height: 15%;
-	align-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 	background: #589C87;
 	padding-right: 42.5%;
 	padding-left: 42.5%;
@@ -101,8 +121,20 @@ padding: 0px;
 .prochainement:after
 {
 display: inline-block;
-animation: dotty steps(1,end) 3s infinite;
+-webkit-animation: dotty steps(1,end) 3s infinite;
+        animation: dotty steps(1,end) 3s infinite;
 content:'';
+}
+
+@-webkit-keyframes dotty
+{
+
+	0% { content: ''; }
+	25% { content: '.'; }
+	50% { content: '..'; }
+	75% { content: '...'; }
+	100% { content: ''; }
+
 }
 
 @keyframes dotty
@@ -118,8 +150,13 @@ content:'';
 
 footer
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	background: #589C87;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -128,7 +165,8 @@ footer
   	top: 97%;
   	width: 100%;
   	margin-top: -2.5em;
-  	justify-content: space-around;
+  	-ms-flex-pack: distribute;
+  	    justify-content: space-around;
 }
 
 .ml, .ml1
@@ -144,18 +182,31 @@ text-decoration: none;
 
 .ml:hover
 {
-  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+          animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+
+@-webkit-keyframes wiggle {
+  10%, 90% {-webkit-transform: translate3d(-1px, 0, 0);transform: translate3d(-1px, 0, 0);}
+  20%, 80% {-webkit-transform: translate3d(2px, 0, 0);transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {-webkit-transform: translate3d(-4px, 0, 0);transform: translate3d(-4px, 0, 0);}
+  40%, 60% {-webkit-transform: translate3d(4px, 0, 0);transform: translate3d(4px, 0, 0);}
+  
 }
 
 
 @keyframes wiggle {
-  10%, 90% {transform: translate3d(-1px, 0, 0);}
-  20%, 80% {transform: translate3d(2px, 0, 0);}
-  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
-  40%, 60% {transform: translate3d(4px, 0, 0);}
+  10%, 90% {-webkit-transform: translate3d(-1px, 0, 0);transform: translate3d(-1px, 0, 0);}
+  20%, 80% {-webkit-transform: translate3d(2px, 0, 0);transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {-webkit-transform: translate3d(-4px, 0, 0);transform: translate3d(-4px, 0, 0);}
+  40%, 60% {-webkit-transform: translate3d(4px, 0, 0);transform: translate3d(4px, 0, 0);}
   
 }
 
@@ -172,11 +223,22 @@ text-decoration: none;
 
 .cn:hover
 {
-  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+          animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
+
+
+
+
+
+
+
 
 /* Ecrans inférieurs à 1200px*/
 
@@ -190,7 +252,8 @@ text-decoration: none;
 	width: 300px;
 	height: 423px;
 	border: 2px solid #000000;
-	box-shadow: 1px 1px 10px #a8a4a3;
+	-webkit-box-shadow: 1px 1px 10px #a8a4a3;
+	        box-shadow: 1px 1px 10px #a8a4a3;
 	overflow: hidden
 }
 
@@ -199,6 +262,8 @@ text-decoration: none;
 {
 	width: 300px;
 	height: 423px;
+	-webkit-transition : all 1s;
+	-o-transition : all 1s;
 	transition : all 1s;
 	opacity: 1;	
 }
@@ -235,8 +300,8 @@ text-decoration: none;
 	background-color: #589C87;
 	font-size: 1.1em;
 	color: #ffd119;
-	padding-left: auto;
-	padding-right: auto;
+	padding-left: 10%;
+	padding-right: 10%;
 	margin-right: 250px;
 	margin-left: 250px;
 	
@@ -244,6 +309,14 @@ text-decoration: none;
 }
 
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -257,7 +330,8 @@ text-decoration: none;
 {
 	width: 35%;
 	height: 35%;
-	align-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 	background: #589C87;
 	padding-right: 32.5%;
 	padding-left: 32.5%;
@@ -273,7 +347,8 @@ text-decoration: none;
 	width: 200px;
 	height: 282px;
 	border: 2px solid #000000;
-	box-shadow: 1px 1px 10px #a8a4a3;
+	-webkit-box-shadow: 1px 1px 10px #a8a4a3;
+	        box-shadow: 1px 1px 10px #a8a4a3;
 	overflow: hidden
 }
 
@@ -282,14 +357,21 @@ text-decoration: none;
 {
 	width: 200px;
 	height: 282px;
+	-webkit-transition : all 1s;
+	-o-transition : all 1s;
 	transition : all 1s;
 	opacity: 1;	
 }
 
 footer
 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	background: #589C87;
 	padding-bottom: 15px;
 	padding-top: 15px;
@@ -298,7 +380,8 @@ footer
   	top: 97%;
   	width: 100%;
   	margin-top: -2.5em;
-  	justify-content: space-around;
+  	-ms-flex-pack: distribute;
+  	    justify-content: space-around;
 }
 
 .ml, .ml1
@@ -345,6 +428,13 @@ text-decoration: none;
 
 
 
+
+
+
+
+
+/* Ecrans inférieurs à 600px*/
+
 @media only screen and (max-width: 600px) 
 
 {
@@ -353,7 +443,8 @@ text-decoration: none;
 {
 	width: 50%;
 	height: 50%;
-	align-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 	background: #589C87;
 	padding-right: 25%;
 	padding-left: 25%;
@@ -366,9 +457,15 @@ text-decoration: none;
 
 .up
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 60px;
   margin-bottom: 80px;
   
@@ -376,9 +473,15 @@ text-decoration: none;
 
 .down
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;     
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;     
+  -ms-flex-pack: distribute;     
+      justify-content: space-around;
   margin-top: 60px;
   
 }
@@ -388,7 +491,8 @@ text-decoration: none;
 	width: 300px;
 	height: 423px;
 	border: 2px solid #000000;
-	box-shadow: 1px 1px 10px #a8a4a3;
+	-webkit-box-shadow: 1px 1px 10px #a8a4a3;
+	        box-shadow: 1px 1px 10px #a8a4a3;
 	overflow: hidden;
 	margin-bottom: 20px;
 	margin-top: 20px;
@@ -446,7 +550,6 @@ text-decoration: none;
 
 
 }
-
 
 
 

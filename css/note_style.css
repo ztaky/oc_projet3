@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* Fonts*/
 
 @font-face {
@@ -55,30 +57,37 @@ padding: 0px;
 
 .logo
 {
-	width: 15%;
-	height: 15%;
-	align-content: center;
-	background: #589C87;
-	padding-right: 43%;
-	padding-left: 42%;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-top: -22px;
+  width: 15%;
+  height: 15%;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #589C87;
+  padding-right: 43%;
+  padding-left: 42%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: -22px;
 }
 
 footer
 {
-	display: flex;
-	flex-direction: row;
-	background: #589C87;
-	padding-bottom: 15px;
-	padding-top: 15px;
-  	position: fixed;
-  	bottom: 0;
-  	top: 97%;
-  	width: 100%;
-  	margin-top: -2.5em;
-  	justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: #589C87;
+  padding-bottom: 15px;
+  padding-top: 15px;
+    position: fixed;
+    bottom: 0;
+    top: 97%;
+    width: 100%;
+    margin-top: -2.5em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .ml, .ml1
@@ -94,18 +103,31 @@ text-decoration: none;
 
 .ml:hover
 {
-  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+          animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+
+@-webkit-keyframes wiggle {
+  10%, 90% {-webkit-transform: translate3d(-1px, 0, 0);transform: translate3d(-1px, 0, 0);}
+  20%, 80% {-webkit-transform: translate3d(2px, 0, 0);transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {-webkit-transform: translate3d(-4px, 0, 0);transform: translate3d(-4px, 0, 0);}
+  40%, 60% {-webkit-transform: translate3d(4px, 0, 0);transform: translate3d(4px, 0, 0);}
+  
 }
 
 
 @keyframes wiggle {
-  10%, 90% {transform: translate3d(-1px, 0, 0);}
-  20%, 80% {transform: translate3d(2px, 0, 0);}
-  30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
-  40%, 60% {transform: translate3d(4px, 0, 0);}
+  10%, 90% {-webkit-transform: translate3d(-1px, 0, 0);transform: translate3d(-1px, 0, 0);}
+  20%, 80% {-webkit-transform: translate3d(2px, 0, 0);transform: translate3d(2px, 0, 0);}
+  30%, 50%, 70% {-webkit-transform: translate3d(-4px, 0, 0);transform: translate3d(-4px, 0, 0);}
+  40%, 60% {-webkit-transform: translate3d(4px, 0, 0);transform: translate3d(4px, 0, 0);}
   
 }
 
@@ -121,10 +143,14 @@ text-decoration: none;
 
 .cn:hover
 {
-  animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+          animation: wiggle 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 
@@ -132,16 +158,21 @@ text-decoration: none;
 
 main
 {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	background-color: #FCDFDB;
-	padding-bottom: 5%;
-	padding-top: 3%;
-	width: 40%;
-	margin-right: 30%;
-	margin-left: 30%;
-	margin-bottom: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: #FCDFDB;
+  padding-bottom: 5%;
+  padding-top: 3%;
+  width: 40%;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 10%;
 
 }
 
@@ -157,39 +188,47 @@ font-weight: bold;
 
 .fas
 {
-	background: linear-gradient(to right, #E45F66 0%, #E99571 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: -webkit-gradient(linear, left top, right top, from(#E45F66), to(#E99571));
+  background: -o-linear-gradient(left, #E45F66 0%, #E99571 100%);
+  background: linear-gradient(to right, #E45F66 0%, #E99571 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .icone1
 {
-	font-size: 4em;
+  font-size: 4em;
 }
 
 .nom1
 {
-	font-family: 'lobster_1.3regular';
-	font-size: 2em;
-	padding-bottom: 2%;
-	color: #371418;
+  font-family: 'lobster_1.3regular';
+  font-size: 2em;
+  padding-bottom: 2%;
+  color: #371418;
 }
 
 
-h4 {
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   color: #371418;
   font-family: 'lobster_1.3regular';
   font-size: 1.5em;
-  font-color: #371418;
-  border-bottom: 
-  }
+  color: #371418;
+ }
 
 
-h4:before, h4:after{
+h3:before, h3:after{
   content: "";
-  flex: 1 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
   border-bottom: 3.5px solid;
   border-color: #371418;
   margin-right: 7%;
@@ -201,38 +240,42 @@ h4:before, h4:after{
 
 article
 {
-	display: flex;
-	margin-right: 7%;
-	margin-left: 7%;
-	justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 7%;
+  margin-left: 7%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .plats
 {
-	text-align: left;
-	font-family: 'handleeregular';
-	letter-spacing: 1.5px;
+  text-align: left;
+  font-family: 'handleeregular';
+  letter-spacing: 1.5px;
 
 }
 
 .prix
 {
-	text-align: right;
-	font-family: 'handleeregular';
+  text-align: right;
+  font-family: 'handleeregular';
 }
 
 .icone2
 {
-	font-size: 2em;
-	margin-top: 7%;
+  font-size: 2em;
+  margin-top: 7%;
 }
 
 .nom2
 {
-	font-family: 'lobster_1.3regular';
-	font-size: 0.7em;
-	padding-bottom: 2%;
-	color: #371418;
+  font-family: 'lobster_1.3regular';
+  font-size: 0.7em;
+  padding-bottom: 2%;
+  color: #371418;
 }
 
 .underline
@@ -249,6 +292,8 @@ article
   width: 0;
   height: 2px;
   background: #E45F66;
+  -webkit-transition: width .3s;
+  -o-transition: width .3s;
   transition: width .3s;
 }
 
@@ -258,9 +303,9 @@ article
 }
 
 
-/* Ecrans inférieurs à 600px*/
+/* Ecrans inférieurs à 550px*/
 
-@media only screen and (max-width: 600px) 
+@media only screen and (max-width: 550px) 
 
 {
 
@@ -268,7 +313,8 @@ article
 {
   width: 50%;
   height: 50%;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background: #589C87;
   padding-right: 25%;
   padding-left: 25%;
@@ -326,7 +372,7 @@ main
 
 /* Ecrans inférieurs à 768px*/
 
-@media only screen and (max-width: 768px) 
+@media only screen and (min-width:550px) and (max-width: 768px) 
 
 {
 
@@ -334,7 +380,8 @@ main
 {
   width: 35%;
   height: 35%;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background: #589C87;
   padding-right: 32.5%;
   padding-left: 32.5%;
@@ -346,12 +393,15 @@ main
 }
 
 
-}
-
 footer
 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #589C87;
   padding-bottom: 15px;
   padding-top: 15px;
@@ -360,7 +410,8 @@ footer
     top: 97%;
     width: 100%;
     margin-top: -2.5em;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .ml, .ml1
@@ -397,7 +448,7 @@ main
 
 /* Ecrans inférieurs à 1200px*/
 
-@media only screen and (max-width: 1200px) 
+@media only screen and (min-width: 768px) and (max-width: 1200px) 
 
 {
 
@@ -425,7 +476,12 @@ text-decoration: none;
 } 
 
 
-
+main
+{
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+}
 
 .prix
 {
@@ -441,7 +497,6 @@ text-decoration: none;
   font-size: 1em;
 }
 }
-
 
 
 
