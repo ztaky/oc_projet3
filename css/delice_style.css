@@ -336,10 +336,10 @@ text-decoration: none;
 
 main
 {
-  width: 100%;
+  width: 97%;
   margin-right: 0px;
   margin-left: 0px;
-  margin-bottom: 30px
+  margin-bottom: 50px
 }
 
 .plats
@@ -355,9 +355,9 @@ main
 
 }
 
-/* Ecrans inférieurs à 768px*/
+/* Ecrans superieurs à 551px inférieurs à 76px*/
 
-@media only screen and (min-width:550px) and (max-width: 768px) 
+@media only screen and (min-width:550px) and (max-width: 767px) 
 
 {
 

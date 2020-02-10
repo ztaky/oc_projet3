@@ -305,7 +305,7 @@ article
 
 /* Ecrans inférieurs à 550px*/
 
-@media only screen and (max-width: 400px) 
+@media only screen and (max-width: 550px) 
 
 {
 
@@ -351,10 +351,10 @@ text-decoration: none;
 
 main
 {
-  width: 100%;
+  width: 97%;
   margin-right: 0px;
   margin-left: 0px;
-  margin-bottom: 100px
+  margin-bottom: 50px
 }
 
 .plats
@@ -370,9 +370,9 @@ main
 
 }
 
-/* Ecrans entre superieurs a 401px et inférieurs à 767px*/
+/* Ecrans entre superieurs a 551px et inférieurs à 767px*/
 
-@media only screen and (min-width:401px) and (max-width: 767px)
+@media only screen and (min-width:551px) and (max-width: 767px)
 
 {
 
@@ -441,8 +441,9 @@ main
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
-  margin-bottom: 100px
+  margin-bottom: 50px
 }
+
 .prix
 {
   text-align: right;
